@@ -11,3 +11,23 @@ For Fedora:
 sudo dnf install  compat-libstdc++-296.i686 compat-libstdc++-33.i686 ncurses-libs.i686 compat-libstdc++-33.x86_64
 sudo dnf install  zlib.i686 ncurses-libs.i686 bzip2-libs.i686
 ```
+
+
+## Debug with ionic
+
+The command:
+```
+ionic cordova build android --prod --release
+```
+
+Instructs to eliminate the debug mode in the apk, so there's no way to see the app running in `chrome://inspect/#devices`
+in order to see the process run the command as:
+
+```
+ionic cordova build android 
+```
+
+An apk will be generated in:
+```
+$approot/platforms/android/build/outputs/apk/android-debug.apk
+```
