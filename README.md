@@ -31,3 +31,4 @@ An apk will be generated in:
 ```
 $approot/platforms/android/build/outputs/apk/android-debug.apk
 ```
+The apk should be available in chrome by visiting: `chrome://inspect/#devices`
